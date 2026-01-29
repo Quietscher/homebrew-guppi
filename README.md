@@ -9,10 +9,10 @@ brew tap Quietscher/guppi
 brew install guppi
 ```
 
-Or directly:
+On first run, guppi will guide you through setup. Then reload your shell:
 
 ```bash
-brew install Quietscher/guppi/guppi
+source ~/.zshrc  # or ~/.bashrc
 ```
 
 ## About guppi
