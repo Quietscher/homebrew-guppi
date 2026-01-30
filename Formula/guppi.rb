@@ -5,21 +5,21 @@
 class Guppi < Formula
   desc "TUI for managing multiple git repositories"
   homepage "https://github.com/Quietscher/guppi"
-  version "1.3.2"
+  version "1.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Quietscher/guppi/releases/download/1.3.2/guppi_1.3.2_darwin_amd64.tar.gz"
-      sha256 "4575f10e44203dbe41c1a79726c1da497410a916f191131884af367297c99145"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.3/guppi_1.3.3_darwin_amd64.tar.gz"
+      sha256 "9cdfd7c8d7cb78ac903b803e95bd6dbdf538df80035dd578ee8dc0adc54ae213"
 
       def install
         bin.install "guppi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Quietscher/guppi/releases/download/1.3.2/guppi_1.3.2_darwin_arm64.tar.gz"
-      sha256 "0857b1c90f7f57186d9fd0fae2c0acfb6ca226b9e0d898c574ed281325c52955"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.3/guppi_1.3.3_darwin_arm64.tar.gz"
+      sha256 "2c1200bffe281b5983a47e0d79e6971cd8eb1fca88982f781514c8134b8007fb"
 
       def install
         bin.install "guppi"
@@ -29,15 +29,15 @@ class Guppi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/guppi/releases/download/1.3.2/guppi_1.3.2_linux_amd64.tar.gz"
-      sha256 "8a7c85e8689f36ba52532a2aa498cf5a40d52aac36ee51992e3f22852d11ccac"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.3/guppi_1.3.3_linux_amd64.tar.gz"
+      sha256 "4274e6c90a0bd53dec4f9d39c085f60b07ebdd68e3f3f9cb401d205e89ddf1a0"
       def install
         bin.install "guppi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/guppi/releases/download/1.3.2/guppi_1.3.2_linux_arm64.tar.gz"
-      sha256 "aa25a15bf8114c9bb852472577d8a8df4e2664d9ef84892425d01977d36ccbd1"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.3/guppi_1.3.3_linux_arm64.tar.gz"
+      sha256 "c62aa9a0356f37e697d5fd2d377d42fe8bb24b619b37c532643673539bcb683e"
       def install
         bin.install "guppi"
       end
