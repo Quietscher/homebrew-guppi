@@ -5,13 +5,13 @@
 class Guppi < Formula
   desc "TUI for managing multiple git repositories"
   homepage "https://github.com/Quietscher/guppi"
-  version "1.5.0"
+  version "1.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Quietscher/guppi/releases/download/1.5.0/guppi_1.5.0_darwin_amd64.tar.gz"
-      sha256 "b976d024cb8fbd0061744aba6323ce4c01c4707600922ebb171a7689dbebc549"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.5/guppi_1.3.5_darwin_amd64.tar.gz"
+      sha256 "4febbe1f1e7e537468776c6fcf54ca8353936df0301b2a537d1fb79cda25b3e8"
 
       def install
         bin.install "guppi"
@@ -19,8 +19,8 @@ class Guppi < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Quietscher/guppi/releases/download/1.5.0/guppi_1.5.0_darwin_arm64.tar.gz"
-      sha256 "d3215841b14ead17fed6b83096a6ab72e244ce13488e44c88c483666530cce0a"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.5/guppi_1.3.5_darwin_arm64.tar.gz"
+      sha256 "8351b528c24527a967cce5a09796954f1b8a5fda32f530e29eea4775d2dd8d0c"
 
       def install
         bin.install "guppi"
@@ -31,16 +31,16 @@ class Guppi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/guppi/releases/download/1.5.0/guppi_1.5.0_linux_amd64.tar.gz"
-      sha256 "cd5142e3c22dad6eb82f92e04fc000867dfbcc8af9e9c63813957ad381792b93"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.5/guppi_1.3.5_linux_amd64.tar.gz"
+      sha256 "1116d632d71d823b3df7d87f59e5ebb2ba6ca2811a008af46d415aebc227cc6a"
       def install
         bin.install "guppi"
         bin.install_symlink "guppi" => "gpi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Quietscher/guppi/releases/download/1.5.0/guppi_1.5.0_linux_arm64.tar.gz"
-      sha256 "96eacf57f2c0e54eeaf72653311fae8012a672bf03697142481e64aa39ca9a3f"
+      url "https://github.com/Quietscher/guppi/releases/download/1.3.5/guppi_1.3.5_linux_arm64.tar.gz"
+      sha256 "4578bc475d4a7408fb41830dcecacf9fa943649582bca7918e03a6b4f54f3d50"
       def install
         bin.install "guppi"
         bin.install_symlink "guppi" => "gpi"
