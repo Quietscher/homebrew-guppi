@@ -11,7 +11,7 @@ class Guppi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Quietscher/guppi/releases/download/1.5.3/guppi_1.5.3_darwin_amd64.tar.gz"
-      sha256 "1595a1ae842ae08bdf77765c4f0596ff32283d31f82166f3080bb6b53820572a"
+      sha256 "aa70196a55daa9b4ea1f7295a115963bd73d8b400c5da51bab72bb8ad8267ee2"
 
       def install
         bin.install "guppi"
@@ -20,7 +20,7 @@ class Guppi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Quietscher/guppi/releases/download/1.5.3/guppi_1.5.3_darwin_arm64.tar.gz"
-      sha256 "2fb8ec6cc1ef5ba31d7041fc468d235b1e785a74d5a18b8168b530fc627b46b7"
+      sha256 "37edc63ea8576fb53b259f05371ddad9fcfa8b39322f72f7d31844661e01e32d"
 
       def install
         bin.install "guppi"
@@ -32,7 +32,7 @@ class Guppi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Quietscher/guppi/releases/download/1.5.3/guppi_1.5.3_linux_amd64.tar.gz"
-      sha256 "a274a7d658e3a59a1a00c4d8d2ce4720435986317cd8aa88c32b789f8eacbbb3"
+      sha256 "a298a36e012ee038f25feed59fefc188ee82783285a1dfbf270945688e1d4329"
       def install
         bin.install "guppi"
         bin.install_symlink "guppi" => "gpi"
@@ -40,7 +40,7 @@ class Guppi < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Quietscher/guppi/releases/download/1.5.3/guppi_1.5.3_linux_arm64.tar.gz"
-      sha256 "2a3fc4c2771947c0da966eae513d1a9febdbbd5f7795a537a696fb3950f5ccf8"
+      sha256 "7aede950075316cdbe610843c62d0e2b1f23d80ff47db00f471a4f676e679b10"
       def install
         bin.install "guppi"
         bin.install_symlink "guppi" => "gpi"
